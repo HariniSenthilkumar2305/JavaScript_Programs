@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Tasks</title>
+</head>
+<body>
+    <script>
+//Differentiate between declaring a variable using var and let in terms of  scope.
+  function scope(){
+    if(true){
+    let a=1;//block scoped
+    var b=2;//function scoped
+    document.write(a+"<br>");
+    document.write(b+"<br>");
+    }
+    document.write(b+"<br>");
+    document.write(a+"<br>");
+  }
+  scope();
+    </script>
+</body>
+</html>

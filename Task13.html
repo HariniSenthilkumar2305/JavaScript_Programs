@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+    <body>
+        <script>
+           /* In “use strict” mode, try to delete a variable, function, or function parameter.  */
+      'use strict'
+      try{
+        let b=10;
+        if(delete b){
+            document.write("variable b was deleted successfully"+"<br>");
+        }
+        else{
+            document.write("variable b was not deleted successfully"+"<br>");            
+        }
+      }
+      catch(e){
+        document.write("Error deleting variable"+e.message+"<br>");
+      }
+      try{
+        function a(){
+            document.write("hello world");
+        }
+        if(delete a){
+            document.write("Function a was deleted successfully"+"<br>");
+        }
+        else{
+            document.write("Function a was not deleted successfully"+"<br>");            
+        }
+      }
+      catch(e){
+        document.write("Error deleting function"+e.message+"<br>");
+      }
+      try{
+        function b(param){
+        if(delete param){
+            document.write("Function parameter was deleted successfully"+"<br>");
+        }
+        else{
+            document.write("Function parameter was not deleted successfully"+"<br>");            
+        }
+        }
+        b(1);
+      }
+      catch(e){
+        document.write("error deleting function parameter:"+e.message+"<br>");
+      }
+        </script>
+    </body>
+</html>
